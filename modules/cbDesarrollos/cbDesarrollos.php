@@ -127,7 +127,15 @@ class cbDesarrollos extends CRMEntity {
 	function vtlib_handler($modulename, $event_type) {
 		if($event_type == 'module.postinstall') {
 			// TODO Handle post installation actions
-			$this->setModuleSeqNumber('configure', $modulename, $modulename.'-', '0000001');
+			$this->setModuleSeqNumber('configure', $modulename, 'dvl-', '0000001');
+
+			require_once('vtlib/Vtiger/Module.php');
+			$moduleInstance = Vtiger_Module::getInstance('Project');
+			$cbdevelModule = Vtiger_Module::getInstance($modulename);
+			$moduleInstance->setRelatedList($cbdevelModule, $modulename, Array('ADD'),'get_dependents_list');
+			$moduleInstance = Vtiger_Module::getInstance('SalesOrders');
+			$moduleInstance->setRelatedList($cbdevelModule, $modulename, Array('ADD','SELECT'),'get_related_list');
+
 		} else if($event_type == 'module.disabled') {
 			// TODO Handle actions when this module is disabled.
 		} else if($event_type == 'module.enabled') {
