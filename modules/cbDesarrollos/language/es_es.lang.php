@@ -9,13 +9,21 @@
  ************************************************************************************/
 
 $mod_strings = Array(
-	'ModuleName' => 'Module Name',
-	'SINGLE_ModuleName' => 'Module Name',
-	'ModuleName ID' => 'Module Name ID',
+	'cbDesarrollos' => 'Desarrollos',
+	'SINGLE_cbDesarrollos' => 'Desarrollo',
+	'cbDesarrollos ID' => 'ID Desarrollo',
 
 	'LBL_CUSTOM_INFORMATION' => 'Información Personalizada',
-	'LBL_MODULEBLOCK_INFORMATION' => 'Información ModuleName',
 	'LBL_DESCRIPTION_INFORMATION' => 'Descripción',
+
+	'referencia' => 'Referencia',
+	'desarrollono' => 'Nº Desarrollo',
+	'fechaini' => 'Inicio',
+	'dvestado' => 'Estado',
+	'fechafin' => 'Fin',
+	'proyecto' => 'Proyecto',
+	'activo' => 'Activo',
+	'presupuesto' => 'Presupuesto',
 
 );
 
