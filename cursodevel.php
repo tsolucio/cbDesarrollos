@@ -4,6 +4,7 @@ $Vtiger_Utils_Log = true;
 
 require_once('vtlib/Vtiger/Module.php');
 require_once('vtlib/Vtiger/Package.php');
+require_once('include/events/include.inc');
 
 global $current_user,$adb;
 set_time_limit(0);
@@ -83,6 +84,16 @@ $blockInstance = Vtiger_Block::getInstance('LBL_PAYSLIP_INFORMATION', $moduleIns
 // $moduleInstance->addLink('DETAILVIEW', 'Añadir Orden Venta',
 // 	'index.php?module=SalesOrder&action=EditView&createmode=link&return_module=$MODULE$&return_id=$RECORD$');
 
+$em = new VTEventsManager($adb);
+// $event = 'corebos.footer';
+// $em->registerHandler($event, 'modules/cbDesarrollos/cbDevelHandler.php', 'cbDevelEventHandler');
+// echo "<h4>Event $event registered.</h4>";
+// $event = 'corebos.header';
+// $em->registerHandler($event, 'modules/cbDesarrollos/cbDevelHandler.php', 'cbDevelEventHandler');
+// echo "<h4>Event $event registered.</h4>";
+// $event = 'corebos.filter.editview.setObjectValues';
+// $em->registerHandler($event, 'modules/cbDesarrollos/cbDevelHandler.php', 'cbDevelEventHandler');
+// echo "<h4>Event $event registered.</h4>";
 
 
 
