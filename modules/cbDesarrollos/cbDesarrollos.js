@@ -6,3 +6,17 @@
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
  ************************************************************************************/
+
+function projectCaptureOnDesarrollo(fromlink,fldname,MODULE,ID) {
+	var BasicSearch = '&query=true&search=true&searchtype=BasicSearch&search_field=projectstatus&search_text=initiated';
+//	var SpecialSearch = encodeURI(BasicSearch);
+	let cuenta = document.getElementById('cuenta');
+	if (cuenta.value!=0) {
+		BasicSearch = BasicSearch + '&cuenta=' + cuenta.value;
+	}
+	window.open("index.php?module=Project&action=Popup&html=Popup_picker&form=vtlibPopupView&forfield="+fldname+"&srcmodule="+MODULE+"&forrecord="+ID+BasicSearch,"vtlibui10","width=680,height=602,resizable=0,scrollbars=0,top=150,left=200");
+}
+
+function cbDesarrollossetValueFromCapture(recordid,value,target_fieldname) {
+	console.log(recordid,value,target_fieldname);
+}
