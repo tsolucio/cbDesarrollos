@@ -95,6 +95,73 @@ $em = new VTEventsManager($adb);
 // $em->registerHandler($event, 'modules/cbDesarrollos/cbDevelHandler.php', 'cbDevelEventHandler');
 // echo "<h4>Event $event registered.</h4>";
 
+// VTCacheUtils::updateCachedInformation('mivalor', 123456);
+
+// $var = VTCacheUtils::lookupCachedInformation('mivalor');
+
+// var_dump($var);
+
+// list($var,$exists) = VTCacheUtils::lookupCachedInformation('otraclave');
+// if ($exists) {
+// 	echo $var;
+// } else {
+// 	var_dump($var);
+// }
+
+//coreBOS_Session::init();
+
+//coreBOS_Session::set('mivalor', 123456);
+
+//$var = coreBOS_Session::get('mivalor',654321);
+
+//echo $var;
+
+//coreBOS_Settings::setSetting('mivalor', 123456);
+
+//$var = coreBOS_Settings::getSetting('mivalor', 654321);
+
+//echo $var;
+
+// $module = 'Contacts';
+// $queryGenerator = new QueryGenerator($module, $current_user);
+// $queryGenerator->setFields(array('id','Accounts.accountname','Accounts.ship_street'));
+// $queryGenerator->startGroup();
+// $queryGenerator->addCondition('firstname', 'mex', 'e');
+// $queryGenerator->addCondition('firstname', 'xem', 'e', QueryGenerator::$OR);
+// $queryGenerator->endGroup();
+
+// $queryGenerator->startGroup(QueryGenerator::$AND);
+// $queryGenerator->addReferenceModuleFieldCondition('Accounts', 'account_id', 'accountname', 'mex', 'e');
+// $queryGenerator->endGroup();
+
+// $query = $queryGenerator->getQuery();
+// echo $query;
+
+// include_once 'modules/cbMap/processmap/Validations.php';
+// $valmod = 'Accounts';
+// $existe = Validations::ValidationsExist($valmod);
+// var_dump($existe);
+// $validator = new Validations($map)
+
+// include_once 'include/validation/load_validations.php';
+
+// $valores = array(
+// 	'email' => '',
+// 	'industry' => 'Baning',
+// );
+// $v = new cbValidator($valores);
+// $v->rule('required', 'email');
+// $v->rule('contains', 'industry','nkin');
+// if($v->validate()) {
+// 	echo "Yay! We're all good!";
+// } else {
+// 	// Errors
+// 	var_dump($v->errors());
+// }
+
+
+
+
 
 
 

@@ -20,3 +20,18 @@ function projectCaptureOnDesarrollo(fromlink,fldname,MODULE,ID) {
 function cbDesarrollossetValueFromCapture(recordid,value,target_fieldname) {
 	console.log(recordid,value,target_fieldname);
 }
+
+function cbdevelEjemplos() {
+	fetch('index.php?module=Utilities&action=UtilitiesAjax&file=ExecuteFunctions' +
+			'&functiontocall=getFieldValuesFromRecord' +
+			'&getFieldValuesFrom=1084' +
+			'&getTheseFields=firstname,Accounts.industry,Accounts.email1'
+	, {
+		credentials: 'same-origin'
+	}).then(function(response) {
+		return response.text();
+	}).then(function(data) {
+		console.log(data);
+	});
+
+}
