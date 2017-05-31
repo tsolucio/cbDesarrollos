@@ -1,0 +1,28 @@
+<map>
+  <originmodule>
+    <originname>Potentials</originname>
+  </originmodule>
+  <targetmodule>
+    <targetname>Potentials</targetname>
+  </targetmodule>
+  <fields>
+    <field>
+      <fieldname>potentialname</fieldname>
+      <Orgfields>
+        <Orgfield>
+          <OrgfieldName>Change this reference</OrgfieldName>
+          <OrgfieldID>CONST</OrgfieldID>
+        </Orgfield>
+      </Orgfields>
+    </field>
+    <field>
+      <fieldname>closingdate</fieldname>
+      <Orgfields>
+        <Orgfield>
+          <OrgfieldName>add_days(get_date('today'), 30)</OrgfieldName>
+          <OrgfieldID>expression</OrgfieldID>
+        </Orgfield>
+      </Orgfields>
+    </field>
+  </fields>
+</map>

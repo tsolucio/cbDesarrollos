@@ -1,0 +1,40 @@
+<map>
+  <originmodule>
+    <originname>Contacts</originname>
+  </originmodule>
+  <targetmodule>
+    <targetname>Potentials</targetname>
+  </targetmodule>
+  <fields>
+    <field>
+      <fieldname>potentialname</fieldname>
+      <Orgfields>
+        <Orgfield>
+          <OrgfieldName>firstname</OrgfieldName>
+        </Orgfield>
+        <Orgfield>
+          <OrgfieldName>lastname</OrgfieldName>
+        </Orgfield>
+        <delimiter> </delimiter>
+      </Orgfields>
+    </field>
+    <field>
+      <fieldname>closingdate</fieldname>
+      <Orgfields>
+        <Orgfield>
+          <OrgfieldName>add_days(get_date('today'), 30)</OrgfieldName>
+          <OrgfieldID>expression</OrgfieldID>
+        </Orgfield>
+      </Orgfields>
+    </field>
+    <field>
+        <fieldname>sales_stage</fieldname>
+        <Orgfields>
+            <Orgfield>
+                <OrgfieldName>Qualification</OrgfieldName>
+                <OrgfieldID>CONST</OrgfieldID>
+            </Orgfield>
+        </Orgfields>
+    </field>
+  </fields>
+</map>

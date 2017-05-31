@@ -1,0 +1,29 @@
+<map>
+  <originmodule>
+    <originname>Accounts</originname>
+  </originmodule>
+  <fields>
+    <field>
+      <fieldname>accountname</fieldname>
+      <validations>
+        <validation>
+          <rule>required</rule>
+        </validation>
+        <validation>
+          <rule>contains</rule>
+          <restrictions>
+          <restriction>mex</restriction>
+          </restrictions>
+        </validation>
+      </validations>
+    </field>
+    <field>
+      <fieldname>industry</fieldname>
+      <validations>
+        <validation>
+          <rule>notDuplicate</rule>
+        </validation>
+      </validations>
+    </field>
+  </fields>
+</map>
