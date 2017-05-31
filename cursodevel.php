@@ -82,7 +82,7 @@ $blockInstance = Vtiger_Block::getInstance('LBL_PAYSLIP_INFORMATION', $moduleIns
 
 //$moduleInstance->addLink('DETAILVIEWBASIC', 'Mi Enlace', 'http://corebos.org');
 // $moduleInstance->addLink('DETAILVIEW', 'Añadir Orden Venta',
-// 	'index.php?module=SalesOrder&action=EditView&createmode=link&return_module=$MODULE$&return_id=$RECORD$');
+// 	'index.php?module=SalesOrder&action=EditView&createmode=link&return_module=$MODULE$&return_action=DetailView&return_id=$RECORD$&cbfromid=$RECORD$');
 
 $em = new VTEventsManager($adb);
 // $event = 'corebos.footer';
